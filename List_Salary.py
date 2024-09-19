@@ -1,20 +1,15 @@
 Working_hours_lst = []
 
-for i in range(0, 7):
+for i in range(0, 2):
+    print("Enter Salary of " + str(i+1) + "Day =")
     hours = int(input())
     Working_hours_lst.append(hours)
 
 print(Working_hours_lst)
 
-lst = []
+EachDaySalary = int(input("Enter the day salary"))
+total_hours_week = sum(Working_hours_lst)
 
-# number of elements as input
-n = int(input("Enter number of elements : "))
+Total_salary = total_hours_week* EachDaySalary
+print("Total day salay is "+ str(Total_salary))
 
-# iterating till the range
-for i in range(0, n):
-    ele = int(input())
-    # adding the element
-    lst.append(ele)
-
-print(lst)
